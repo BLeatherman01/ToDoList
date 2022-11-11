@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    width: 80%;
+    border-radius: 5px;
+    margin-left: 8%;
+   
+  }
+  
+  h1 {
+    margin: 15px 0px;
+  }
+  
+  .Todo_Item {
+    display: flex;
+    align-items: center;
+  }
+  
+  ol {
+    padding: 5px;
+    margin-left: 1.3em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  input {
+    border-radius: 5px;
+    height: 35px;
+  }
+  
+  ::placeholder {
+    font-size: 2em;
+  }
+  
+  .deleteButton {
+    position:fixed;
+    right: 5px;
+  }
+ 
+  .taskCompleted {
+    text-decoration: line-through;
+    margin: 0.5em;
+  }
+  
+  .taskBtn {
+    background: white;
+    color: #ff1493;
+    border-color: #ff1493;
+    border-radius: 5px;
+    padding-right: 5px;
+  
+  }
+  
+  div {
+    position: relative;
+  }
+
+  .add {
+    background: #ff1493;
+    color: #eee;
+    box-sizing: content-box;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 1.4em;
+  }
