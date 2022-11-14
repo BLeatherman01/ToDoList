@@ -22,13 +22,16 @@ export class ToDoListComponent implements OnInit {
     { task: "study", completed: false },
     { task: "Space out on couch", completed: true }
   ];
-
+ 
   addATodo() {
     this.newItem.task =(<HTMLInputElement>document.getElementById("task")).value;
     this.toDoList.push(this.newItem);
    
   }
- 
+ completeTodo(i:number){
+  this.toDoList[i].completed = true;
+
+ }
   deleteATodo(i: number): void {
     this.toDoList.splice(i, 1);
   }

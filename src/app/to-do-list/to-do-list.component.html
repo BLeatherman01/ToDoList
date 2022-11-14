@@ -9,7 +9,7 @@
       <ol>
         <li *ngFor="let todo of toDoList; index as i">
           <div class="Todo_Item">
-            <button class="taskBtn" *ngIf="!todo.completed">Complete</button>
+            <button class="taskBtn"  (click)="completeTodo(i)" *ngIf="!todo.completed">Complete</button>
             <p [ngClass]="{ taskCompleted: todo.completed }">
               {{ todo.task }}
             </p>
